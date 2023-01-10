@@ -18,6 +18,6 @@ ConnectToDB();
 app.use('/api/users',UserRouter);
 app.use('/api/message',MessageRoute);
 
-const server = app.listen(process.env.PORT,()=>{
+app.listen(process.env.PORT,()=>{
     console.log(colors.red(`server started at port : ${process.env.PORT}`));
 });
